@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Obstacle
+  - SpeedBoost
+  - TripleJumpPower
+  - TimeWarpPowerUp
+  - Zeus
+  - Clue
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Ground
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2028650101
+    locked: 0
+  - name: Background 01
+    uniqueID: 2346330771
+    locked: 0
+  - name: Ground
+    uniqueID: 4101120703
+    locked: 0
+  - name: Clues
+    uniqueID: 3633585171
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1806859423
+    locked: 0
+  - name: Player
+    uniqueID: 4188199445
+    locked: 0
+  - name: Power-Up
+    uniqueID: 2977991503
+    locked: 0
+  - name: Clouds
+    uniqueID: 2779658569
+    locked: 0
+  - name: Zeus
+    uniqueID: 761405665
+    locked: 0
+  - name: Cloud
+    uniqueID: 2114976009
+    locked: 0
