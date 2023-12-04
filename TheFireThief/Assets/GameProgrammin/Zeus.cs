@@ -7,48 +7,56 @@ using UnityEngine;
 /// </summary>
 public class Zeus : MonoBehaviour
 {
-    private Rigidbody2D rigidBody;
+    private Rigidbody2D rb;
     private float initialVelocity = 1f;
-    private float acceleration = 1f;
-    private float timeToWait = 6f;
+    [SerializeField] private float acceleration = 1f;
+    [SerializeField] private float timeToWait = 6f;
     private float timer;
 
+    /// <summary>
     /// Start method gets the Rigidbody2D component attached to the GameObject, sets the initial velocity and initializes the timer
-    /// Start is called before the first frame update
+    /// </summary>
     void Start()
     {
-        rigidBody = GetComponent<Rigidbody2D>();
-        if (rigidBody == null)
+        rb = GetComponent<Rigidbody2D>();
+        if (rb == null)
         {
-
-            rigidBody = gameObject.AddComponent<Rigidbody2D>();
+            rb = gameObject.AddComponent<Rigidbody2D>();
         }
-        rigidBody.velocity = new Vector2(initialVelocity, 0f);
+        rb.velocity = new Vector2(initialVelocity, 0f);
         timer = timeToWait;
     }
 
+    /// <summary>
     /// Update method is increasing the velocity by 1f depending on the time elapsed. 
+    /// </summary>
     void Update()
     {
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
             initialVelocity += acceleration;
-            rigidBody.velocity = new Vector2(initialVelocity, 0f);
+            rb.velocity = new Vector2(initialVelocity, 0f);
             timer = timeToWait;
         }
-
     }
 
-   /// getters and setters of the class 
+    /// <summary>
+    /// Getter for the initial velocity
+    /// </summary>
+    /// <returns> Initial velocity as float </returns>
     public float GetInitialVelocity()
     {
         return initialVelocity;
     }
 
+    /// <summary>
+    /// Setter for the initial velocity
+    /// </summary>
+    /// <param name="newInitialVelocity"> Value for the new velocty </param>
     public void SetInitialVelocity(float newInitialVelocity)
     {
         initialVelocity = newInitialVelocity;
-        rigidBody.velocity = new Vector2(initialVelocity, 0f);
+        rb.velocity = new Vector2(initialVelocity, 0f);
     }
 }

@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3129326089063826692
 Transform:
   m_ObjectHideFlags: 0
@@ -133,6 +133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 336b527581ffea647840e2ca06980951, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 2049378183442927191, guid: ae09b309faf85e944a442ceaf9e1760f, type: 3}
+  playerManager: {fileID: 0}
   speedBoostChecker: 0
   boostDuration: 5
   player: {fileID: 2049378183442927191, guid: ae09b309faf85e944a442ceaf9e1760f, type: 3}
